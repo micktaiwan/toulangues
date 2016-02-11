@@ -1,5 +1,16 @@
 <template name="layout">
-  <h1>Bienvenue</h1>
-  <a href="{{pathFor 'memoryCards'}}">Ajout de mots</a>
-  {{> yield}}
+  {{>navbar}}
+
+  <div class="row">
+    <div class="col-md-2">
+      <!--<a href="{{pathFor 'memoryCards'}}">Ajout de mots</a>-->
+    </div>
+
+    <div class="col-md-8">
+      {{> yield}}
+    </div>
+
+    <div class="col-md-2">
+    </div>
+  </div>
 </template>

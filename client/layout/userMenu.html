@@ -1,0 +1,19 @@
+<template name="userMenu">
+
+  <ul class="nav navbar-nav navbar-right">
+    {{#if currentUser}}
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+           aria-expanded="false">{{myUsername}} <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{pathFor 'orbiterAccountsMyAccount'}}"><i class="pg-settings_small"></i> My profile</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="clearfix js-logout">Logout</a></li>
+        </ul>
+      </li>
+    {{else}}
+      <li><a href="{{pathFor 'orbiterAccountsSignin'}}"><i class="pg-settings_small"></i> Signin</a></li>
+    {{/if}}
+  </ul>
+
+</template>
