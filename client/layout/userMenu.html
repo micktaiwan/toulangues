@@ -4,15 +4,15 @@
     {{#if currentUser}}
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-           aria-expanded="false">{{myUsername}} <span class="caret"></span></a>
+           aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  {{myUsername}} <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="{{pathFor 'orbiterAccountsMyAccount'}}"><i class="pg-settings_small"></i> My profile</a></li>
+          <li><a href="{{pathFor 'orbiterAccountsMyAccount'}}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> My profile</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#" class="clearfix js-logout">Logout</a></li>
+          <li><a href="#" class="clearfix js-logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
         </ul>
       </li>
     {{else}}
-      <li><a href="{{pathFor 'orbiterAccountsSignin'}}"><i class="pg-settings_small"></i> Signin</a></li>
+      <li><a href="{{pathFor 'orbiterAccountsSignin'}}"><i class="fa fa-sign-in" aria-hidden="true"></i> Signin</a></li>
     {{/if}}
   </ul>
 
