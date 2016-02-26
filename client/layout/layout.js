@@ -1,4 +1,6 @@
-Template.layout.helpers({});
+Template.layout.helpers({
+
+});
 
 Template.layout.events({});
 
